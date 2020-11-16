@@ -2,9 +2,11 @@
     Méthodes d'accès aux services Web API_Server/bookmarks
  */
 
-const apiBaseURL = "http://localhost:5000/api/bookmarks";
-const accountBaseUrl = "http://localhost:5000/";
-//const apiBaseURL= "https://blushing-imaginary-streetcar.glitch.me/api/bookmarks";
+//const apiBaseURL = "http://localhost:5000/api/bookmarks";
+//const accountBaseUrl = "http://localhost:5000/";
+const apiBaseURL = "https://luck-maple-mapusaurus.glitch.me/api/bookmarks";
+const accountBaseUrl = "https://luck-maple-mapusaurus.glitch.me/";
+
 function storeAccessToken(token) {
     localStorage.setItem('access_Token', token);
 }
