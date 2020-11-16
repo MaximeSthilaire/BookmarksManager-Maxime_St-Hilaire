@@ -623,8 +623,8 @@
                 let bgColorRow = "row_" + item.Id + " cell " + (oddRow ? "oddRow" : "evenRow");
 
                 // Distribution des données de l'item dans des cellules de la rangée
-                $('#itemList').append(makeCell(makeHyperLink(item.Url, makeFavicon(item.Url) + item.Name), bgColorRow + " ellipsis"));
-                $('#itemList').append(makeCell("name", bgColorRow + " ellipsis")); //TODO remplacer par le nom du user
+                $('#itemList').append(makeCell(item.Name, bgColorRow + " ellipsis"));
+                $('#itemList').append(makeCell(makeHyperLink(item.Url, makeFavicon(item.Url) + item.Url), bgColorRow + " ellipsis"));
                 $('#itemList').append(makeCell(item.Category, bgColorRow + " ellipsis"));
 
                 // Bouton d'appel à la modification de l'item
